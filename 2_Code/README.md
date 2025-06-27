@@ -24,3 +24,5 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+## 注意
+由于源数据过大无法上传，该网页的代码可能无法运行，故在视频讲解中附上了本地运行过程，（本地代码结构与上传的代码结构稍许不同）
