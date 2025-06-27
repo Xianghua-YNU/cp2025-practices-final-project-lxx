@@ -18,3 +18,9 @@
 ## 环境配置
 ```bash
 pip install -r requirements.txt
+```
+
+## 运行方式
+```bash
+python main.py
+```
