@@ -15,14 +15,14 @@ from visualization.clustering_plots import plot_cluster_distribution, plot_tsne
 def main():
     # 初始化设置
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    input_folder = 'data/optical'  # 替换为实际路径
+    input_folder = 'optical-fits'  # 文件无法上传，替换为实际路径
     output_folder = 'results/clusters'
-    radio_dir = "data/radio"  # 替换为实际路径
+    radio_dir = "radio-fits"  # 文件无法上传，替换为实际路径
     
     # 1. 加载模型
     print("\n正在加载DenseNet201模型...")
     model = timm.create_model('densenet201', pretrained=False)
-    model.load_state_dict(torch.load('models/densenet201.pth'), strict=False)
+    model.load_state_dict(torch.load('pytorch_model_densenet201.bin'), strict=False)  #文件无法上传，替换为实际路径
     model = model.to(device)
     
     # 2. 数据处理流程
